@@ -6,11 +6,6 @@ class Oak < Formula
   license "MIT"
   head "https://github.com/thesephist/oak.git", branch: "main"
 
-  livecheck do
-    url :stable
-    strategy :github_latest
-  end
-
   depends_on "go" => :build
 
   def install
